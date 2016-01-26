@@ -9,50 +9,49 @@
   </head>
   <body>
     <div class="container">
-      <h1>Address book</h1>
+      <h1>OMGOMGISABOOKFORFRENS!!!!!!11!!1</h1>
       <div class="row">
         <div class="col-md-6">
           <h2>Add a contact:</h2>
           <form id="new-contact">
             <div class="form-group">
               <label for="new-first-name">First name</label>
-              <input type="text" class="form-group" id="new-first-name">
+              <input type="text" class="form-control" id="new-first-name" placeholder="Toots">
             </div>
             <div class="form-group">
               <label for="new-last-name">Last name</label>
-              <input type="text" class="form-group" id="new-last-name">
+              <input type="text" class="form-control" id="new-last-name" placeholder="McGee">
             </div>
             <div id="new-addresses">
               <div class="new-addresses">
                 <div class="form-group">
                   <label for="new-street">Street</label>
-                  <input type="text" class="new-street">
+                  <input type="text" class="new-street form-control" placeholder="4528 SE Farfetched Lane">
                 </div>
                 <div class="form-group">
                   <label for="new-city">City</label>
-                  <input type="text" class="new-city">
+                  <input type="text" class="new-city form-control" placeholder="Huckleberry Hold">
                 </div>
                 <div class="form-group">
                   <label for="new-state">State</label>
-                  <input type="text" class="new-state">
+                  <input type="text" class="new-state form-control" placeholder="Bliss">
                 </div>
               </div>
             </div>
-            <span class="btn btn-primary" id="add-address">Another address</span>
-            <button type="submit" class="btn">Add</button>
+            <button class="btn" id="add-address">Another address</button>
+            <button type="submit" class="btn btn-primary">Add Contact</button>
           </form>
 
           <h2>Contacts:</h2>
           <ul id="contacts">
           </ul>
         </div>
-
         <div class="col-md-6">
           <div id="show-contact">
             <h2></h2>
             <p>First name: <span class="first-name"></span></p>
             <p>Last name: <span class="last-name"></span></p>
-            <p>Addresses:</p>
+            <p>Address(s):</p>
             <ul id="addresses">
             </ul>
           </div>

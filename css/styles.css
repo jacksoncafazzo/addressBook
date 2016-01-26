@@ -1,5 +1,40 @@
+h1, h2 {
+  font-family: impact;
+}
+
+.btn-primary {
+  margin-left: 50px;
+}
+
+label {
+  font-family: impact;
+}
+
+input {
+  float: right;
+}
+
+button {
+  margin-top: 15px;
+}
+
 #show-contact {
   display: none;
+  background-image: url(../img/imbatman.png);
+  background-size: 100% 100%;
+  min-height: 600px;
+  font-family: impact;
+  color: white;
+  padding-top: 7px;
+  padding-left: 25px;
+}
+
+#show-contact p, ul {
+  font-size: 30px;
+}
+
+#show-contact h2 {
+  font-size: 40px;
 }
 
 .contact {

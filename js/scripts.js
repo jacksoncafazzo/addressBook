@@ -48,18 +48,14 @@ $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
 
     event.preventDefault();
-    debugger;
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
     var newContact = new Contact(inputtedFirstName, inputtedLastName);
 
-    $(".new-address").each(function() {
-      // var inputtedStreet = $(this).find(".new-street").val();
-      // var inputtedCity = $(this).find(".new-city").val();
-      // var inputtedState = $(this).find(".new-state").val();
-      var inputtedStreet = "teststreet";
-      var inputtedCity = "testcity";
-      var inputtedState = "teststate";
+    $(".new-addresses").each(function() {
+      var inputtedStreet = $(this).find(".new-street").val();
+      var inputtedCity = $(this).find(".new-city").val();
+      var inputtedState = $(this).find(".new-state").val();
       var newAddress = new Address(inputtedStreet, inputtedCity, inputtedState);
       newContact.addresses.push(newAddress);
     });
@@ -67,7 +63,6 @@ $(document).ready(function() {
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
     $(".contact").last().click(function() {
-      debugger;
       $("#show-contact").show();
       $("#show-contact h2").text(newContact.fullName());
       $(".first-name").text(newContact.firstName);
